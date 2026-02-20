@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JaipurRides - Premium cab services and guided sightseeing tours in Jaipur, the Pink City. Book your cab or tour package today!" />
+  <title>JaipurRides — Cabs & Sightseeing in the Pink City</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏯</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="logo">
+          <div class="logo-icon">🏯</div>
+          Jaipur<span>Rides</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#attractions">Attractions</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#cabs">Cabs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#booking" class="nav-cta">Book Now</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-grid">
+          <!-- Left: Text -->
+          <div class="hero-text">
+            <div class="hero-badge">
+              🏆 &nbsp; #1 Rated Travel Service in Jaipur
+            </div>
+            <h1>
+              Explore<br/>
+              <span class="highlight">Jaipur</span><br/>
+              Like Never Before
+            </h1>
+            <p>
+              Premium cab services &amp; expertly guided sightseeing tours
+              across Jaipur's most iconic landmarks. Comfortable rides,
+              knowledgeable guides, unforgettable memories.
+            </p>
+            <div class="hero-btns">
+              <a href="#packages" class="btn btn-primary">View Packages</a>
+              <a href="#booking" class="btn btn-outline">Book a Cab</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-num" data-count="5000" data-suffix="+">0+</div>
+                <div class="stat-label">Happy Travelers</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" data-count="50" data-suffix="+">0+</div>
+                <div class="stat-label">Expert Drivers</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" data-count="15" data-suffix="+">0+</div>
+                <div class="stat-label">Tour Packages</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num" data-count="8" data-suffix=" yrs">0 yrs</div>
+                <div class="stat-label">Experience</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Quick Booking Card -->
+          <div>
+            <div class="hero-card">
+              <h3>Quick Cab Search</h3>
+              <p>Find the perfect ride for your Jaipur journey</p>
+              <form id="heroBookingForm">
+                <div class="form-group">
+                  <label>Pickup Location</label>
+                  <input type="text" id="pickup" placeholder="Hotel, Airport, Railway Station..." />
+                </div>
+                <div class="form-group">
+                  <label>Trip Type</label>
+                  <select id="tripType">
+                    <option value="">Select trip type...</option>
+                    <option value="city-tour">Full City Sightseeing Tour</option>
+                    <option value="half-day">Half Day Tour</option>
+                    <option value="airport">Airport Transfer</option>
+                    <option value="outstation">Outstation Trip</option>
+                    <option value="hourly">Hourly Cab Rental</option>
+                    <option value="night-tour">Night Jaipur Tour</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" id="tripDate" />
+                  </div>
+                  <div class="form-group">
+                    <label>Passengers</label>
+                    <select id="passengers">
+                      <option value="">Pax</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5-6">5–6</option>
+                      <option value="7+">7+</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">🔍&nbsp; Search Available Cabs</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Everything you need for a seamless Jaipur experience — from your first ride to your last sunset.</p>
+        <div class="line"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-service="hourly" data-label="City Cab Service">
+          <div class="service-icon">🚖</div>
+          <h3>City Cab Service</h3>
+          <p>Comfortable, air-conditioned cabs available 24/7 across Jaipur. Professional drivers, clean vehicles, and transparent pricing — no surprises.</p>
+          <div class="service-features">
+            <span>24/7 Availability</span>
+            <span>AC Vehicles</span>
+            <span>Trained Drivers</span>
+            <span>Real-time Tracking</span>
+          </div>
+        </div>
+        <div class="service-card" data-service="full-day" data-label="Guided Sightseeing">
+          <div class="service-icon">🗺️</div>
+          <h3>Guided Sightseeing</h3>
+          <p>Explore Jaipur's magnificent forts, palaces, and bazaars with our knowledgeable local guides who bring history to life.</p>
+          <div class="service-features">
+            <span>Expert Local Guides</span>
+            <span>Customisable Routes</span>
+            <span>History & Culture</span>
+            <span>Photography Stops</span>
+          </div>
+        </div>
+        <div class="service-card" data-service="airport" data-label="Airport Transfer">
+          <div class="service-icon">✈️</div>
+          <h3>Airport Transfers</h3>
+          <p>Stress-free pickup and drop-off at Jaipur International Airport. We monitor your flight to ensure we're there on time, always.</p>
+          <div class="service-features">
+            <span>Flight Monitoring</span>
+            <span>Meet & Greet</span>
+            <span>Fixed Pricing</span>
+            <span>Luggage Assistance</span>
+          </div>
+        </div>
+        <div class="service-card" data-service="full-day" data-label="Heritage Tours">
+          <div class="service-icon">🏰</div>
+          <h3>Heritage Tours</h3>
+          <p>Deep-dive heritage packages covering Amber Fort, City Palace, Jantar Mantar, Hawa Mahal and more — crafted for culture enthusiasts.</p>
+          <div class="service-features">
+            <span>UNESCO Sites</span>
+            <span>Skip Entry Queues</span>
+            <span>Audio Guide Option</span>
+            <span>Group & Private</span>
+          </div>
+        </div>
+        <div class="service-card" data-service="night-tour" data-label="Night City Tour">
+          <div class="service-icon">🌙</div>
+          <h3>Night City Tour</h3>
+          <p>Witness Jaipur illuminated after dark. Visit illuminated forts, vibrant bazaars, and enjoy a magical evening in the Pink City.</p>
+          <div class="service-features">
+            <span>Illuminated Forts</span>
+            <span>Night Markets</span>
+            <span>Dinner Recommendations</span>
+            <span>Safe & Comfortable</span>
+          </div>
+        </div>
+        <div class="service-card" data-service="outstation" data-label="Outstation Trip">
+          <div class="service-icon">🚌</div>
+          <h3>Outstation Trips</h3>
+          <p>Day trips to Pushkar, Ajmer, Ranthambore, Agra, and more. Comfortable vehicles, experienced drivers familiar with every route.</p>
+          <div class="service-features">
+            <span>Pushkar / Ajmer</span>
+            <span>Ranthambore</span>
+            <span>Agra Day Trip</span>
+            <span>Multi-city Routes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ATTRACTIONS ===== -->
+  <section class="attractions" id="attractions">
+    <div class="container">
+      <div class="section-title">
+        <h2>Top Attractions in Jaipur</h2>
+        <p>The Pink City is home to some of India's most breathtaking monuments. Here's where we'll take you.</p>
+        <div class="line"></div>
+      </div>
+      <div class="attractions-grid">
+
+        <div class="attraction-card">
+          <div class="attraction-img">
+            <div class="img-bg bg-amber">🏯</div>
+            <span class="attraction-badge">Must Visit</span>
+          </div>
+          <div class="attraction-info">
+            <h3>Amber Fort</h3>
+            <div class="attraction-meta">
+              <span>📍 Amer, 11 km</span>
+              <span>⏱ 2–3 hrs</span>
+              <span>⭐ 4.8</span>
+            </div>
+            <p>Majestic hilltop fort with stunning Rajput architecture, mirrored halls, and panoramic views of Maota Lake. A UNESCO World Heritage Site.</p>
+            <a href="#booking" class="attraction-link" data-service="full-day" data-label="Full Day Sightseeing Tour">Book a visit →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img">
+            <div class="img-bg bg-pink">🌸</div>
+            <span class="attraction-badge">Iconic</span>
+          </div>
+          <div class="attraction-info">
+            <h3>Hawa Mahal</h3>
+            <div class="attraction-meta">
+              <span>📍 Old City, 1 km</span>
+              <span>⏱ 1 hr</span>
+              <span>⭐ 4.7</span>
+            </div>
+            <p>The iconic "Palace of Winds" — a five-storey honeycomb facade with 953 small windows designed to allow cool air to flow through. Jaipur's most photographed monument.</p>
+            <a href="#booking" class="attraction-link" data-service="half-day" data-label="Half Day Sightseeing Tour">Book a visit →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img">
+            <div class="img-bg bg-blue">👑</div>
+            <span class="attraction-badge">Royal</span>
+          </div>
+          <div class="attraction-info">
+            <h3>City Palace</h3>
+            <div class="attraction-meta">
+              <span>📍 Tripolia Bazar</span>
+              <span>⏱ 1.5–2 hrs</span>
+              <span>⭐ 4.6</span>
+            </div>
+            <p>The grand royal palace complex still home to Jaipur's royal family. Features museums, courtyards, and the famous silver water vessels — largest in the world.</p>
+            <a href="#booking" class="attraction-link" data-service="half-day" data-label="Half Day Sightseeing Tour">Book a visit →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img">
+            <div class="img-bg bg-green">🔭</div>
+            <span class="attraction-badge">UNESCO</span>
+          </div>
+          <div class="attraction-info">
+            <h3>Jantar Mantar</h3>
+            <div class="attraction-meta">
+              <span>📍 Near City Palace</span>
+              <span>⏱ 1 hr</span>
+              <span>⭐ 4.5</span>
+            </div>
+            <p>An 18th-century astronomical observatory with 19 massive instruments. Built by Maharaja Jai Singh II — a UNESCO World Heritage Site of extraordinary precision.</p>
+            <a href="#booking" class="attraction-link" data-service="half-day" data-label="Half Day Sightseeing Tour">Book a visit →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img">
+            <div class="img-bg bg-purple">🦚</div>
+            <span class="attraction-badge">Nature</span>
+          </div>
+          <div class="attraction-info">
+            <h3>Nahargarh Fort</h3>
+            <div class="attraction-meta">
+              <span>📍 Aravalli Hills</span>
+              <span>⏱ 2 hrs</span>
+              <span>⭐ 4.6</span>
+            </div>
+            <p>Perched on the Aravalli range, this fort offers the most spectacular panoramic views of Jaipur city. Especially stunning at sunset — a photographer's paradise.</p>
+            <a href="#booking" class="attraction-link" data-service="full-day" data-label="Full Day Sightseeing Tour">Book a visit →</a>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img">
+            <div class="img-bg bg-teal">🕌</div>
+            <span class="attraction-badge">Spiritual</span>
+          </div>
+          <div class="attraction-info">
+            <h3>Birla Mandir & Bazaars</h3>
+            <div class="attraction-meta">
+              <span>📍 Statue Circle</span>
+              <span>⏱ 1.5 hrs</span>
+              <span>⭐ 4.4</span>
+            </div>
+            <p>Visit the serene marble Birla Mandir, then dive into Jaipur's colorful bazaars — Johari Bazaar for gems, Bapu Bazaar for textiles, and Nehru Bazaar for handicrafts.</p>
+            <a href="#booking" class="attraction-link" data-service="half-day" data-label="Half Day Sightseeing Tour">Book a visit →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PACKAGES ===== -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="section-title">
+        <h2>Tour Packages</h2>
+        <p>Carefully curated packages to help you experience Jaipur at your own pace and budget.</p>
+        <div class="line"></div>
+      </div>
+      <div class="packages-grid">
+
+        <div class="package-card" data-service="half-day" data-label="Half Day Sightseeing Tour">
+          <div class="package-header">
+            <div class="package-icon">🌅</div>
+            <h3>Half Day Tour</h3>
+            <p>4–5 hours · Perfect for quick visits</p>
+          </div>
+          <div class="package-price">
+            <div class="price-main">₹1,299 <span>/ person</span></div>
+            <div class="price-note">Min. 2 persons · Cab included</div>
+          </div>
+          <div class="package-body">
+            <div class="package-includes">
+              <div class="include-item"><span class="check">✓</span> Hawa Mahal (exterior + photo stop)</div>
+              <div class="include-item"><span class="check">✓</span> City Palace visit</div>
+              <div class="include-item"><span class="check">✓</span> Jantar Mantar observatory</div>
+              <div class="include-item"><span class="check">✓</span> Johari Bazaar stroll</div>
+              <div class="include-item"><span class="check">✓</span> AC cab &amp; local guide</div>
+              <div class="include-item"><span class="check">✓</span> Bottled water included</div>
+            </div>
+            <a href="half-day-tour.html" class="btn btn-primary pkg-btn" style="display:block;text-align:center;">View Details →</a>
+          </div>
+        </div>
+
+        <div class="package-card featured" data-service="full-day" data-label="Full Day Sightseeing Tour">
+          <div class="package-header">
+            <span class="popular-tag">⭐ Most Popular</span>
+            <div class="package-icon">🏯</div>
+            <h3>Full Day Tour</h3>
+            <p>8–9 hours · The complete experience</p>
+          </div>
+          <div class="package-price">
+            <div class="price-main">₹2,499 <span>/ person</span></div>
+            <div class="price-note">Min. 2 persons · All inclusive</div>
+          </div>
+          <div class="package-body">
+            <div class="package-includes">
+              <div class="include-item"><span class="check">✓</span> Amber Fort with elephant ride</div>
+              <div class="include-item"><span class="check">✓</span> Hawa Mahal &amp; City Palace</div>
+              <div class="include-item"><span class="check">✓</span> Jantar Mantar &amp; Birla Mandir</div>
+              <div class="include-item"><span class="check">✓</span> Nahargarh Fort sunset</div>
+              <div class="include-item"><span class="check">✓</span> AC cab &amp; expert guide</div>
+              <div class="include-item"><span class="check">✓</span> Traditional Rajasthani lunch</div>
+              <div class="include-item"><span class="check">✓</span> Entry tickets included</div>
+            </div>
+            <a href="full-day-tour.html" class="btn btn-primary pkg-btn" style="display:block;text-align:center;">View Details →</a>
+          </div>
+        </div>
+
+        <div class="package-card" data-service="multi-day" data-label="Royal 2-Day Package">
+          <div class="package-header">
+            <div class="package-icon">🌟</div>
+            <h3>Royal Jaipur 2-Day</h3>
+            <p>2 days · Deep cultural immersion</p>
+          </div>
+          <div class="package-price">
+            <div class="price-main">₹4,999 <span>/ person</span></div>
+            <div class="price-note">Min. 2 persons · Hotel optional</div>
+          </div>
+          <div class="package-body">
+            <div class="package-includes">
+              <div class="include-item"><span class="check">✓</span> Everything in Full Day Tour</div>
+              <div class="include-item"><span class="check">✓</span> Jaigarh Fort visit</div>
+              <div class="include-item"><span class="check">✓</span> Pushkar day trip (Day 2)</div>
+              <div class="include-item"><span class="check">✓</span> Night Jaipur illumination tour</div>
+              <div class="include-item"><span class="check">✓</span> All meals Day 1 &amp; Day 2</div>
+              <div class="include-item"><span class="check">✓</span> Heritage hotel booking assistance</div>
+              <div class="include-item"><span class="check">✓</span> Airport pick-up &amp; drop</div>
+            </div>
+            <a href="royal-jaipur-tour.html" class="btn btn-primary pkg-btn" style="display:block;text-align:center;">View Details →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAB TYPES ===== -->
+  <section class="cabs" id="cabs">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Fleet</h2>
+        <p>Choose from our range of well-maintained vehicles suited for every group size and budget.</p>
+        <div class="line"></div>
+      </div>
+      <div class="cabs-grid">
+        <div class="cab-card">
+          <span class="cab-emoji">🚗</span>
+          <h4>Hatchback</h4>
+          <div class="cab-capacity">👥 1–3 passengers</div>
+          <p style="font-size:0.82rem;color:#666;margin-bottom:12px;">Swift Dzire, WagonR. Ideal for solo travellers &amp; couples exploring the city.</p>
+          <div class="cab-price">₹12 <span>/ km &nbsp;|&nbsp; Min ₹300</span></div>
+        </div>
+        <div class="cab-card">
+          <span class="cab-emoji">🚕</span>
+          <h4>Sedan</h4>
+          <div class="cab-capacity">👥 1–4 passengers</div>
+          <p style="font-size:0.82rem;color:#666;margin-bottom:12px;">Honda City, Hyundai Verna. Premium comfort for business &amp; family trips.</p>
+          <div class="cab-price">₹15 <span>/ km &nbsp;|&nbsp; Min ₹400</span></div>
+        </div>
+        <div class="cab-card">
+          <span class="cab-emoji">🚙</span>
+          <h4>SUV / MUV</h4>
+          <div class="cab-capacity">👥 4–6 passengers</div>
+          <p style="font-size:0.82rem;color:#666;margin-bottom:12px;">Innova Crysta, Ertiga. Spacious &amp; comfortable for families and groups.</p>
+          <div class="cab-price">₹20 <span>/ km &nbsp;|&nbsp; Min ₹600</span></div>
+        </div>
+        <div class="cab-card">
+          <span class="cab-emoji">🚐</span>
+          <h4>Mini Bus / Tempo</h4>
+          <div class="cab-capacity">👥 10–20 passengers</div>
+          <p style="font-size:0.82rem;color:#666;margin-bottom:12px;">Traveller, Winger. Perfect for large groups, corporate outings &amp; school trips.</p>
+          <div class="cab-price">₹35 <span>/ km &nbsp;|&nbsp; Min ₹1,200</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us" id="why">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose JaipurRides?</h2>
+        <p>Thousands of travellers trust us every year. Here's what makes us the #1 choice in Jaipur.</p>
+        <div class="line"></div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-icon">⏰</span>
+          <h4>Always On Time</h4>
+          <p>We value your time. Our drivers arrive 10 minutes early — always. No waiting, no excuses.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">💰</span>
+          <h4>Transparent Pricing</h4>
+          <p>What you see is what you pay. Fixed fares, zero hidden charges — no toll or parking surprises.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🛡️</span>
+          <h4>Safe & Verified</h4>
+          <p>All drivers are background-verified, trained, and licensed. Real-time tracking on every ride.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🌐</span>
+          <h4>Multilingual Guides</h4>
+          <p>Our guides speak Hindi, English, French, and Spanish — so you never feel lost in translation.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">📱</span>
+          <h4>Easy Booking</h4>
+          <p>Book online, via WhatsApp, or a quick phone call. Instant confirmation within minutes.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">🎒</span>
+          <h4>Customisable Tours</h4>
+          <p>Not happy with a standard package? Tell us your interests and we'll design your perfect day.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">❄️</span>
+          <h4>AC Fleet</h4>
+          <p>All vehicles are fully air-conditioned and cleaned before every trip — fresh and comfortable.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon">💬</span>
+          <h4>24/7 Support</h4>
+          <p>Our support team is available around the clock via phone, WhatsApp, or email — anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="reviews">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Travellers Say</h2>
+        <p>Don't take our word for it — hear from the thousands who explored Jaipur with us.</p>
+        <div class="line"></div>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Our driver Ramesh was incredibly knowledgeable about every monument. He took us to a local dhaba for lunch that wasn't in any guidebook — best dal baati of our lives! Highly recommend the full-day tour."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">P</div>
+            <div class="reviewer-info">
+              <h5>Priya Sharma</h5>
+              <span>Delhi · Full Day Tour</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"We were 6 people and the Innova was spotless and very comfortable. The guide explained history in such an engaging way — kids loved every minute of Amber Fort! Will definitely book again for our next Rajasthan trip."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: linear-gradient(135deg, #3498db, #2980b9);">R</div>
+            <div class="reviewer-info">
+              <h5>Rajesh Malhotra</h5>
+              <span>Mumbai · Family Package</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"As a solo female traveller, safety was my priority. JaipurRides exceeded my expectations — verified driver, shared live location with family, and the guide was respectful and professional throughout. Outstanding service!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: linear-gradient(135deg, #27ae60, #1e8449);">S</div>
+            <div class="reviewer-info">
+              <h5>Sarah Mitchell</h5>
+              <span>UK · Solo Tour</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Booked the 2-day Royal package and it was worth every rupee. The Pushkar day trip was magical, and watching Jaipur light up at night from Nahargarh was unforgettable. Seamless experience from start to finish!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: linear-gradient(135deg, #8e44ad, #6c3483);">A</div>
+            <div class="reviewer-info">
+              <h5>Arjun Kapoor</h5>
+              <span>Bangalore · 2-Day Royal Package</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Our airport pickup was perfectly on time even though our flight landed early. The driver had a welcome sign, helped with all luggage, and gave great restaurant recommendations. Perfect start to our Jaipur holiday!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: linear-gradient(135deg, #e67e22, #d35400);">M</div>
+            <div class="reviewer-info">
+              <h5>Marco &amp; Elena</h5>
+              <span>Italy · Airport Transfer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Took the night Jaipur tour — seeing Amber Fort and Hawa Mahal illuminated was absolutely breathtaking. Our guide shared stories and legends that made the whole experience feel magical. A must-do for any Jaipur visitor!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar" style="background: linear-gradient(135deg, #16a085, #0e6655);">K</div>
+            <div class="reviewer-info">
+              <h5>Kavita Nair</h5>
+              <span>Pune · Night City Tour</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING SECTION ===== -->
+  <section class="booking-section" id="booking">
+    <div class="container">
+      <div class="booking-grid">
+
+        <!-- Left: Contact Info -->
+        <div class="booking-info">
+          <h2>Ready to Explore Jaipur?</h2>
+          <p>Fill in the form and our team will reach out to you within 30 minutes to confirm your booking. You can also reach us directly via phone or WhatsApp for instant assistance.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div class="contact-item-text">
+                <h5>Call / WhatsApp</h5>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div class="contact-item-text">
+                <h5>Email Us</h5>
+                <p>bookings@jaipurrides.in</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <h5>Our Office</h5>
+                <p>MI Road, Near Ajmeri Gate, Jaipur 302001</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div class="contact-item-text">
+                <h5>Working Hours</h5>
+                <p>Open 24/7 — Cabs available anytime</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Booking Form -->
+        <div class="booking-form">
+          <h3>Book Your Ride</h3>
+          <p>Complete the form and we'll confirm within 30 minutes</p>
+          <form id="mainBookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" id="bookName" placeholder="Full name" />
+              </div>
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" id="bookPhone" placeholder="+91 XXXXX XXXXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" id="bookEmail" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label>Service / Package *</label>
+              <select id="bookService">
+                <option value="">Select a service...</option>
+                <option value="half-day">Half Day Sightseeing Tour — ₹1,299/person</option>
+                <option value="full-day">Full Day Sightseeing Tour — ₹2,499/person</option>
+                <option value="multi-day">Royal 2-Day Package — ₹4,999/person</option>
+                <option value="airport">Airport Transfer</option>
+                <option value="outstation">Outstation Trip</option>
+                <option value="hourly">Hourly Cab Rental</option>
+                <option value="night-tour">Night City Tour</option>
+                <option value="custom">Custom / Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Travel Date *</label>
+                <input type="date" id="bookDate" />
+              </div>
+              <div class="form-group">
+                <label>No. of Passengers *</label>
+                <select id="bookPassengers">
+                  <option value="">Select...</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5-6">5–6</option>
+                  <option value="7-10">7–10</option>
+                  <option value="11+">11+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Special Requests</label>
+              <input type="text" id="bookNotes" placeholder="Wheelchair access, child seat, specific attractions..." />
+            </div>
+            <button type="submit" class="btn btn-primary">Confirm Booking →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">🏯</div>
+            Jaipur<span>Rides</span>
+          </a>
+          <p>Your trusted travel partner in the Pink City. Premium cabs, expert guides, and unforgettable sightseeing tours across Jaipur's magnificent heritage.</p>
+          <div class="social-links">
+            <div class="social-link">📘</div>
+            <div class="social-link">📸</div>
+            <div class="social-link">🐦</div>
+            <div class="social-link">▶️</div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#packages">Tour Packages</a></li>
+            <li><a href="#cabs">Our Fleet</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#booking">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Tours</h4>
+          <ul class="footer-links">
+            <li><a href="half-day-tour.html">Half Day Tour</a></li>
+            <li><a href="full-day-tour.html">Full Day Tour</a></li>
+            <li><a href="royal-jaipur-tour.html">Royal 2-Day Package</a></li>
+            <li><a href="#packages">Night Jaipur Tour</a></li>
+            <li><a href="#packages">Pushkar Day Trip</a></li>
+            <li><a href="#packages">Ranthambore Safari</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>📞 +91 98765 43210</li>
+            <li>📧 bookings@jaipurrides.in</li>
+            <li>📍 MI Road, Jaipur 302001</li>
+            <li>⏰ 24/7 Available</li>
+            <li><a href="#booking">WhatsApp Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 JaipurRides. All rights reserved. Built with ❤️ for the Pink City.</p>
+        <p>Privacy Policy · Terms of Service · <a href="#booking">Sitemap</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast">
+    <span id="toastMsg"></span>
+  </div>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <div class="back-to-top" id="backToTop">↑</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

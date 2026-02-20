@@ -66,8 +66,10 @@ heroForm.addEventListener('submit', (e) => {
 });
 
 // ===== MAIN BOOKING FORM =====
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyN2se8FAKEwJIwB4bwDTXx594BjaOJFjNXxlEZJ96kM-veCWoQzQmW0noa4qAO9BuF/exec';
+
 const mainBookingForm = document.getElementById('mainBookingForm');
-mainBookingForm.addEventListener('submit', (e) => {
+mainBookingForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const fields = ['bookName', 'bookPhone', 'bookEmail', 'bookService', 'bookDate', 'bookPassengers'];
@@ -91,17 +93,32 @@ mainBookingForm.addEventListener('submit', (e) => {
     return;
   }
 
-  // Simulate booking
   const btn = mainBookingForm.querySelector('.btn');
   btn.textContent = 'Processing...';
   btn.disabled = true;
 
-  setTimeout(() => {
+  try {
+    await fetch(SHEET_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: values.bookName,
+        phone: values.bookPhone,
+        email: values.bookEmail,
+        service: values.bookService,
+        date: values.bookDate,
+        passengers: values.bookPassengers
+      })
+    });
+    mainBookingForm.reset();
+    showToast(`Booking received! We'll contact ${values.bookName} on ${values.bookPhone} shortly.`);
+  } catch {
+    showToast('Something went wrong. Please call us directly.', 'error');
+  } finally {
     btn.textContent = 'Book Now';
     btn.disabled = false;
-    mainBookingForm.reset();
-    showToast(`Booking confirmed! We'll contact ${values.bookName} on ${values.bookPhone} shortly.`);
-  }, 1800);
+  }
 });
 
 // ===== AUTO-FILL BOOKING FORM =====
